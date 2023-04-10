@@ -1,6 +1,6 @@
-## SLP Management Workers / SeLePeeww
+# SLP Management Workers / SeLePeeww
 
-# Steps
+## Steps
 - Clone this repository
 ```sh
 git clone (link)
