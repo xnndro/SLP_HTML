@@ -11,7 +11,8 @@ git remote -v
 ```
 - Then if your git remote is to SLP_HTML, so u can do your job tasks
 
-> Note: Please create a file in the folder according to the role
+> Note: Please create a file in the folder according to the role.
+and this important, pls read this
 > Danger !!!: Please check JS and CSS section in template and compare with our files, if there is a difference, please update it into all files.
 
 if u are done, please push your code to this branch
