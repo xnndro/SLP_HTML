@@ -5,13 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SLP Management Workers</title>
-    <link href="../../assets/extra-libs/c3/c3.min.css" rel="stylesheet">
-    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
-    <link href="../../assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../../assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css">
-    <link rel="stylesheet" href="../../assets/extra-libs/datatables.net-bs4/css/responsive.dataTables.min.css">
-    <link href="../../assets/libs/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet" />
-    <!-- Custom CSS -->
     <link href="../../dist/css/style.min.css" rel="stylesheet">
 </head>
 <body>
@@ -125,6 +118,10 @@
                                             class="hide-menu"> Jadwal
                                         </span></a>
                                 </li>
+                                <li class="sidebar-item"><a href="workers.html" class="sidebar-link"><span
+                                            class="hide-menu"> Pekerja
+                                        </span></a>
+                                </li>
                                 <li class="sidebar-item"><a href="task-report.html" class="sidebar-link"><span
                                             class="hide-menu"> Laporan Kerja
                                         </span></a>
@@ -174,69 +171,48 @@
                 <!-- *************************************************************** -->
                 <!-- Start First Cards -->
                 <!-- *************************************************************** -->
-                <div class="row">
+               <div class="row">
                     <div class="col-lg-12">
-                        <h3 class="mb-3">Jadwal Pekerjaan</h3>
+                        <h3 class="mb-3">Ubah Pekerja</h3>
                         <div class="card">
-                            <div class="">
-                                <div class="row">
-                                    <div class="col-lg-3 border-end pr-0">
-                                        <div class="card-body border-bottom">
-                                            <h4 class="card-title mt-2">Drag & Drop Event</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div id="calendar-events" class="">
-                                                        <div class="calendar-events mb-3" data-class="bg-info"><i
-                                                                class="fa fa-circle text-info me-2"></i>Event One</div>
-                                                        <div class="calendar-events mb-3" data-class="bg-success"><i
-                                                                class="fa fa-circle text-success me-2"></i> Event Two
-                                                        </div>
-                                                        <div class="calendar-events mb-3" data-class="bg-danger"><i
-                                                                class="fa fa-circle text-danger me-2"></i>Event Three
-                                                        </div>
-                                                        <div class="calendar-events mb-3" data-class="bg-warning"><i
-                                                                class="fa fa-circle text-warning me-2"></i>Event Four
-                                                        </div>
-                                                    </div>
-                                                    <!-- checkbox -->
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input"
-                                                            id="drop-remove">
-                                                        <label class="custom-control-label" for="drop-remove">Remove
-                                                            after drop</label>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="mb-3 row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">Nama</label>
+                                        <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="staticEmail" value="email@example.com">
                                         </div>
                                     </div>
-                                    <div class="col-lg-9">
-                                        <div class="card-body b-l calender-sidebar">
-                                            <div id="calendar"></div>
+                                    <div class="mb-3 row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">Posisi</label>
+                                        <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="staticEmail" value="email@example.com">
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                                    <div class="mb-3 row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                        <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="staticEmail" value="email@example.com">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                        <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword">
+                                        </div>
+                                    </div>
 
-                                
-                        <!-- If there is no schedulle added -->
-                        <div class="row">    
-                            <div class="col-lg-12 mt-3">
-                                <div class="card">
-                                    <div class="d-flex justify-content-center align-items-center flex-wrap mb-5">
-                                        <div class="text-center">
-                                            <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_vyL7gxqRAH.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-                                            <h5 class="mt-n5">Belum ada jadwal yang ditujukan kepada kamu</h5>
-                                        </div>
+                                    <!-- 2 button in div and that div is on right side -->
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                        <button type="submit" class="btn btn-primary">Ubah</button>
+                                        <button type="submit" class="btn btn-dark">Batalkan</button>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                </div>
-                
+               </div>
+
             </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
@@ -258,7 +234,7 @@
     <!-- ============================================================== -->
     <!-- End Wrapper -->
 
-      <!-- All Jquery -->
+       <!-- All Jquery -->
     <!-- ============================================================== -->
     <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -296,6 +272,7 @@
     <script src="../../assets/extra-libs/taskboard/js/jquery-ui.min.js"></script>
     <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>
