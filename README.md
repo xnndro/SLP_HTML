@@ -1,4 +1,4 @@
-# SLP Management Workers / SeLePeeww
+# SLP Management Workers / Stavy
 
 ## Steps
 - Clone this repository
