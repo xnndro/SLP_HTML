@@ -175,81 +175,10 @@
         <div class="page-wrapper">
             <div class="container-fluid">
 
-                <!--  Start Modal -->
-                <div class="modal fade" id="formpengajuancuti" tabindex="-1" role="dialog"
-                aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg rounded-5">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <div class="row align-items-center d-flex" style="width:80vh">
-                                    <div class="col-12 text-center">
-                                        <h4 class="modal-title text-black" id="myLargeModalLabel">Formulir Pengajuan Cuti Kerja</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row mb-2">
-                                    <div class="col-4 text-black" style="width:27vh">Nama Lengkap</div>
-                                    <div class="col-auto text-black">:</div>
-                                    <div class="col-6">
-                                        <input type="text" class="shadow rounded-3 px-1 w-100 form-group" id="name" value="Xiboba">
-                                    </div>
-                                </div>
-                                <div class="row mb-2">
-                                    <div class="col-5 text-black" style="width:27vh">Posisi</div>
-                                    <div class="col-auto text-black">:</div>
-                                    <div class="col-6">
-                                        <input type="text" class="shadow rounded-3 px-1 w-100" id="name" value="Fascade Cleaner">
-                                    </div>
-                                </div>
-                                <div class="row mb-2">
-                                    <div class="col-5 text-black" style="width:27vh">Kategori Cuti</div>
-                                    <div class="col-auto text-black">:</div>
-                                    <div class="col-6">
-                                        <select name="" class="form-select w-100" id="kategori_cuti">
-                                            <option selected>Pilih Kategori Cuti</option>
-                                            <option value="cuti_umum">Cuti Umum</option>
-                                            <option value="cuti_menyusui_melahirkan">Cuti Menyusui & Melahirkan</option>
-                                            <option value="cuti_kesehatan">Cuti Masalah Kesehatan</option>
-                                            <option value="cuti_kedukaan">Cuti Kedukaan</option>
-                                        </select>
-                                    </div>
-
-                                </div>
-                                <div class="row mb-2">
-                                    <div class="col-5 text-black" style="width:27vh">Tanggal Mulai Cuti</div>
-                                    <div class="col-auto text-black">:</div>
-                                    <div class="col-6">
-                                        <input type="date" class="shadow rounded-3 px-1 w-100" id="name" value="">
-                                    </div>
-                                </div>
-                                <div class="row mb-2">
-                                    <div class="col-5 text-black" style="width:27vh">Tanggal Akhir Cuti</div>
-                                    <div class="col-auto text-black">:</div>
-                                    <div class="col-6">
-                                        <input type="date" class="shadow rounded-3 px-1 w-100" id="name" value="">
-                                    </div>
-                                </div>
-                                <div class="row mb-2">
-                                    <div class="col-5 text-black" style="width:27vh">Pesan</div>
-                                    <div class="col-auto text-black">:</div>
-                                    <div class="col-6">
-                                        <textarea class="p-2 rounded-2 w-100" name="" id="" cols="50" rows="10">Saya butuh healing pak</textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer self-align-center">
-                                <button type="button" class="btn btn-lg rounded-4 btn-primary" style="width:30vh">Ajukan</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Modal -->
-
                 <!-- Start Title -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-black fw-500">Pengajuan Cuti Kerja</h2>
+                        <h2 class="text-black fw-500">Kategori Cuti Kerja</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -262,138 +191,120 @@
                 <div class="row align-items-center p-0">
                   
                 <!-- Start Information Column -->
-
-                <div class="col-md-6 col-lg-3 col-xlg-3">
-                    <div class="card border-end card-hover bg-primary overflow-hidden my-3 my-sm-2">
-                        <div class="card-body">
-                            <div class="d-flex text-white">
-                                <div>
-                                    <img src="../../assets/images/pending-icon.svg" class="rounded-circle m-n5" width="150">   
-                                </div>
-                                <div class="ms-auto">
-                                    <h6 class="font-weight-normal text-truncate">Sisa Cuti Kerja</h6>
-                                    <div class="d-flex align-items-center">
-                                        <h2 class="text-white font-weight-medium">236</h2>
-                                        <p class="text-white font-weight-medium ms-2 mb-2">Hari</p>
+                <div class="row d-flex align-items-center">
+                    <!-- Start Cuti Umum -->
+                    <div class="col-lg-5 col-sm-9">
+                        <div class="card text-end d-flex">
+                            <div class="card-header bg-primary" style="height:auto">
+                                <div class="row">
+                                    <div class="col-7 px-0">
+                                        <div class="text-start">
+                                            <h2 class="text-white ms-2 mt-5 mb-0 font-weight-medium">Cuti Umum</h2>
+                                            <div class="text-white font-weight-normal fs-6 mb-4 ms-2">Diajukan oleh semua karyawan</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="text-end">
+                                            <img src="../../assets/images/cuti-umum-icon.svg" class="mx-n5"  width="180"> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            
+                            <div class="card-body text-start">
+                              <blockquote class="blockquote mb-0">
+                                <div class="fs-5">Cuti umum merupakan cuti yang dapat diajukan oleh semua karyawan. Durasi cuti maksimal dalam suatu periode adalah kuota cuti tahunan karyawan. Cuti harus diajukan minimal 2 hari sebelum tanggal mulai cuti. Contoh penggunaan cuti umum : mengurus keperluan perjalanan luar negri di kedutaan.</div>
+                              </blockquote>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <!-- End Cuti Umum -->
 
-                <div class="col-md-6 col-lg-3 col-xlg-3">
-                    <div class="card border-end card-hover bg-danger overflow-hidden my-3 my-sm-2">
-                        <div class="card-body">
-                            <div class="d-flex text-white">
-                                <div>
-                                    <img src="../../assets/images/write-icon.svg" class="rounded-circle m-n5" width="150">   
-                                </div>
-                                <div class="ms-auto">
-                                    <h6 class="font-weight-normal text-truncate">Proses Pengajuan</h6>
-                                    <div class="d-flex align-items-center">
-                                        <h2 class="text-white font-weight-medium">236</h2>
-                                        <p class="text-white font-weight-medium ms-2 mb-2">rec</p>
+                    <!-- Start Cuti Hamil -->
+                    <div class="col-lg-5 col-sm-9">
+                        <div class="card text-end d-flex">
+                            <div class="card-header bg-danger" style="height:auto;">
+                                <div class="row">
+                                    <div class="col-7 px-0">
+                                        <div class="text-start">
+                                            <h2 class="text-white ms-2 mt-5 mb-0 font-weight-medium">Cuti Melahirkan</h2>
+                                            <div class="text-white font-weight-normal fs-6 mb-4 ms-2">Diajukan oleh karyawan hamil</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="text-end">
+                                            <img src="../../assets/images/kehamilan-icon.svg" class="me-n1"  width="220"> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            
+                            <div class="card-body text-start">
+                              <blockquote class="blockquote mb-0">
+                                <div class="fs-5">Cuti umum merupakan cuti yang dapat diajukan oleh semua karyawan. Durasi cuti maksimal dalam suatu periode adalah kuota cuti tahunan karyawan. Cuti harus diajukan minimal 2 hari sebelum tanggal mulai cuti. Contoh penggunaan cuti umum : mengurus keperluan perjalanan luar negri di kedutaan.</div>
+                              </blockquote>
+                            </div>
                         </div>
                     </div>
-                </div>
-               
-               
-                <div class="col-md-6 col-lg-3 col-xlg-3">
-                    <div class="card border-end card-hover bg-success overflow-hidden my-3 my-sm-2">
-                        <div class="card-body">
-                            <div class="d-flex text-white">
-                                <div>
-                                    <img src="../../assets/images/success-box.svg" class="rounded-circle m-n5" width="150">   
-                                </div>
-                                <div class="ms-auto">
-                                    <h6 class="font-weight-normal text-truncate">Pengajuan Disetujui</h6>
-                                    <div class="d-flex align-items-center">
-                                        <h2 class="text-white font-weight-medium">236</h2>
-                                        <p class="text-white font-weight-medium ms-2 mb-2">rec</p>
+                    <!-- End Cuti Hamil -->
+
+                    <!-- Start Cuti Kesehatan -->
+                    <div class="col-lg-5 col-sm-9">
+                        <div class="card text-end d-flex">
+                            <div class="card-header bg-success" style="height:auto;">
+                                <div class="row">
+                                    <div class="col-7 px-0">
+                                        <div class="text-start">
+                                            <h2 class="text-white ms-2 mt-5 mb-0 font-weight-medium">Cuti Kesehatan</h2>
+                                            <div class="text-white font-weight-normal fs-6 mb-4 ms-2">Diajukan oleh semua karyawan</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="text-end">
+                                            <img src="../../assets/images/kesehatan icon.svg" class="mx-n5 mt-3"  width="180"> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            
+                            <div class="card-body text-start">
+                              <blockquote class="blockquote mb-0">
+                                <div class="fs-5">Cuti umum merupakan cuti yang dapat diajukan oleh semua karyawan. Durasi cuti maksimal dalam suatu periode adalah kuota cuti tahunan karyawan. Cuti harus diajukan minimal 2 hari sebelum tanggal mulai cuti. Contoh penggunaan cuti umum : mengurus keperluan perjalanan luar negri di kedutaan.</div>
+                              </blockquote>
+                            </div>
                         </div>
                     </div>
-                </div> 
+                    <!-- End Cuti Kesehatan -->
 
-                <div class="col-md-6 col-lg-3 col-xlg-3">
-                        <a href="kategori-cuti.html"><button type="button" class="btn btn-lg btn-primary rounded-4 px-3 w-100 my-3 my-sm-2">Kategori Cuti</button></a>
-                        <button type="button" class="btn btn-lg btn-primary rounded-4 px-3 w-100 my-3 my-sm-2" data-bs-toggle="modal" data-bs-target="#formpengajuancuti">Pengajuan Cuti</button>
-                </div> 
+                    <!-- Start Cuti Kedukaan -->
+                    <div class="col-lg-5 col-sm-9">
+                        <div class="card text-end d-flex">
+                            <div class="card-header bg-warning" style="height:auto;">
+                                <div class="row">
+                                    <div class="col-7 px-0">
+                                        <div class="text-start">
+                                            <h2 class="text-white ms-2 mt-5 mb-0 font-weight-medium">Cuti Kedukaan</h2>
+                                            <div class="text-white font-weight-normal fs-6 mb-4 ms-2">Diajukan oleh semua karyawan</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="text-end">
+                                            <img src="../../assets/images/kedukaan-icon.png" class="mx-n5"  width="150"> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body text-start">
+                              <blockquote class="blockquote mb-0">
+                                <div class="fs-5">Cuti umum merupakan cuti yang dapat diajukan oleh semua karyawan. Durasi cuti maksimal dalam suatu periode adalah kuota cuti tahunan karyawan. Cuti harus diajukan minimal 2 hari sebelum tanggal mulai cuti. Contoh penggunaan cuti umum : mengurus keperluan perjalanan luar negri di kedutaan.</div>
+                              </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    
                 <!-- End Information Column -->
             
                
             
 
                 </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="col-lg-12 text-black">
-                                    <h3>Daftar Pengajuan Cuti</h3>
-                                </div>
-                                <div class="table-responsive">
-                                    <table id="multi_col_order"
-                                        class="table border table-striped table-bordered text-nowrap" style="width:100%">
-                                        <thead>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>Kategori Cuti</th>
-                                                <th>Tanggal Pengajuan</th>
-                                                <th>Tanggal Mulai</th>
-                                                <th>Tanggal Akhir</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>CT001</td>
-                                                <td>Cuti Umum</td>
-                                                <td>28-10-2023</td>
-                                                <td>29-10-2023</td>
-                                                <td>30-10-2023</td>
-                                                <td>Disetujui</td>
-                                            </tr>
-                                            <tr>
-                                                <td>CT002</td>
-                                                <td>Cuti Kehamilan dan Menyusui</td>
-                                                <td>28-10-2023</td>
-                                                <td>30-10-2023</td>
-                                                <td>30-12-2023</td>
-                                                <td>Disetujui</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Start No record-->
-                 <div class="row">    
-                    <div class="col-lg-12 mt-3">
-                        <div class="card">
-                            <div class="d-flex justify-content-center align-items-center flex-wrap mb-5">
-                                <div class="text-center">
-                                    <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_kj1b8w1w.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-                                    <h5 class="mt-n2">Tidak Ada Pengajuan Cuti</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Record -->
                 
             </div>
             <!-- ============================================================== -->
