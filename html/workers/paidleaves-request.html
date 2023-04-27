@@ -176,83 +176,74 @@
             <div class="container-fluid">
 
                 <!--  Start Modal -->
-                <div class="modal fade" id="detail" tabindex="-1" role="dialog"
+                <div class="modal fade" id="formpengajuancuti" tabindex="-1" role="dialog"
                 aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg rounded-5">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <div class="row align-items-end" style="width:80vh">
-                                    <div class="col-2 ">
-                                        <h4 class="modal-title text-black" id="myLargeModalLabel">CT001</h4>
-                                    </div>
-                                    <div class="col-auto mt-3 text-start">
-                                        <h6 class="modal-title" id="myLargeModalLabel">Pengajuan : 25-03-2023</h4>
+                                <div class="row align-items-center d-flex" style="width:80vh">
+                                    <div class="col-12 text-center">
+                                        <h4 class="modal-title text-black" id="myLargeModalLabel">Formulir Pengajuan Cuti Kerja</h4>
                                     </div>
                                 </div>
                             </div>
                             <div class="modal-body">
                                 <div class="row mb-2">
-                                    <div class="col-5 text-black" style="width:27vh">Nama Lengkap</div>
+                                    <div class="col-4 text-black" style="width:27vh">Nama Lengkap</div>
                                     <div class="col-auto text-black">:</div>
-                                    <div class="col-5 align-self-start">Xiboba</div>
+                                    <div class="col-6">
+                                        <input type="text" class="shadow rounded-3 px-1 w-100 form-group" id="name" value="Xiboba">
+                                    </div>
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-5 text-black" style="width:27vh">Posisi</div>
                                     <div class="col-auto text-black">:</div>
-                                    <div class="col-5 align-self-start">Fasecade Cleaner</div>
+                                    <div class="col-6">
+                                        <input type="text" class="shadow rounded-3 px-1 w-100" id="name" value="Fascade Cleaner">
+                                    </div>
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-5 text-black" style="width:27vh">Kategori Cuti</div>
                                     <div class="col-auto text-black">:</div>
-                                    <div class="col-5 align-self-start">Cuti Umum</div>
+                                    <div class="col-6">
+                                        <select name="" class="form-select w-100" id="kategori_cuti">
+                                            <option selected>Pilih Kategori Cuti</option>
+                                            <option value="cuti_umum">Cuti Umum</option>
+                                            <option value="cuti_menyusui_melahirkan">Cuti Menyusui & Melahirkan</option>
+                                            <option value="cuti_kesehatan">Cuti Masalah Kesehatan</option>
+                                            <option value="cuti_kedukaan">Cuti Kedukaan</option>
+                                        </select>
+                                    </div>
+
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-5 text-black" style="width:27vh">Tanggal Mulai Cuti</div>
                                     <div class="col-auto text-black">:</div>
-                                    <div class="col-5 align-self-start">25-03-2023</div>
+                                    <div class="col-6">
+                                        <input type="date" class="shadow rounded-3 px-1 w-100" id="name" value="">
+                                    </div>
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-5 text-black" style="width:27vh">Tanggal Akhir Cuti</div>
                                     <div class="col-auto text-black">:</div>
-                                    <div class="col-5 align-self-start">26-03-2023</div>
+                                    <div class="col-6">
+                                        <input type="date" class="shadow rounded-3 px-1 w-100" id="name" value="">
+                                    </div>
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-5 text-black" style="width:27vh">Pesan</div>
                                     <div class="col-auto text-black">:</div>
+                                    <div class="col-6">
+                                        <textarea class="p-2 rounded-2 w-100" name="" id="" cols="50" rows="10">Saya butuh healing pak</textarea>
+                                    </div>
                                 </div>
-                                <textarea class="p-2 rounded-2" name="" id="" cols="50" rows="10">Saya butuh healing pak</textarea>
                             </div>
                             <div class="modal-footer self-align-center">
-                                <button type="button" class="btn btn-lg rounded-4 btn-primary" style="width:30vh">Setuju</button>
-                                <button type="button" class="btn btn-lg rounded-4 btn-danger" style="width:30vh">Tolak</button>
+                                <button type="button" class="btn btn-lg rounded-4 btn-primary" style="width:30vh">Ajukan</button>
                             </div>
-                        </div><!-- /.modal-content -->
-                        <!-- close button -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
-
-                <div class="modal fade" id="acc" tabindex="-1" role="dialog"
-                aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="myLargeModalLabel">Tambahkan Komentar</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="mb-3">
-                                      <label for="exampleInputEmail1" class="form-label">Komentar</label>
-                                      <textarea type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  </form>
-                            </div>
-                        </div><!-- /.modal-content -->
-                        <!-- close button -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
-
+                        </div>
+                    </div>
+                </div>
                 <!-- End Modal -->
 
                 <!-- Start Title -->
@@ -334,8 +325,8 @@
                 </div> 
 
                 <div class="col-md-6 col-lg-3 col-xlg-3">
-                        <button type="button" class="btn btn-lg btn-primary rounded-4 px-3 w-100 my-3 my-sm-2" data-bs-toggle="modal" data-bs-target="#acc">Kategori Cuti</button>
-                        <button type="button" class="btn btn-lg btn-primary rounded-4 px-3 w-100 my-3 my-sm-2" data-bs-toggle="modal" data-bs-target="#acc">Pengajuan Cuti</button>
+                        <a href="kategoricuti.html"><button type="button" class="btn btn-lg btn-primary rounded-4 px-3 w-100 my-3 my-sm-2">Kategori Cuti</button></a>
+                        <button type="button" class="btn btn-lg btn-primary rounded-4 px-3 w-100 my-3 my-sm-2" data-bs-toggle="modal" data-bs-target="#formpengajuancuti">Pengajuan Cuti</button>
                 </div> 
                 <!-- End Information Column -->
             
