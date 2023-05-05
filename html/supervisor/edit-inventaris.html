@@ -30,7 +30,7 @@
         border: 3px dotted #a3a3a3;
         border-radius: 5px;
         width: 500px;
-        height: 200px;
+        height: 400px;
         }
 
     </style>
@@ -194,13 +194,13 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 align-self-center">
-                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Tambah Inventaris</h4>
+                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Ubah Inventaris</h4>
                         <!-- PATH -->
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb m-0 p-0">
-                                    <li class="breadcrumb-item"><a href="index.html" class="text-muted">Inventaris</a></li>
-                                    <li class="breadcrumb-item text-muted active" aria-current="page">Tambah Inventaris</li>
+                                    <li class="breadcrumb-item"><a style="color: #5F76E8;" href="inventaris.html">Inventaris</a></li>
+                                    <li class="breadcrumb-item text-muted active" aria-current="page">Ubah Inventaris</li>
                                 </ol>
                             </nav>
                         </div>
@@ -220,13 +220,16 @@
                                         <div class="container col-md-12 align-items-center d-flex justify-content-center" style="position: relative">
                                             <!-- <div class="card"> -->
                                                 <div class="drop_box center" style="background-color: #fcfdfa;">
-                                                <header style="color: #31CFD2;">
-                                                    <h4>Tambahkan Foto Inventaris</h4>
-                                                </header>
-                                                <form class="mt-4">
+                                                    <header style="color: #5F76E8;">
+                                                        <h4>Ubah Foto</h4>
+                                                    </header>
+                                                    <div>
+                                                        <img style="height: 300px;" src="../../assets/images/product/p1.jpg" alt="">
+                                                    </div>
+                                                <form class="mt-10">
                                                     <div class="input-group flex-nowrap">
                                                         <div class="custom-file w-100">
-                                                                <input class="form-control" type="file" id="formFile">
+                                                            <input class="form-control" type="file" id="formFile">
                                                         </div>
                                                         <button class="btn btn-outline-primary" type="button">
                                                             Unggah
@@ -239,20 +242,20 @@
                                             <div class="mb-3 row">
                                                 <label class="col-sm-2 col-form-label" style="color: #5F76E8;">Nama</label>
                                                 <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="input" placeholder="Nama inventaris">
+                                                <input type="text" class="form-control" id="input" value="Sapu Ruang Kelas">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
                                                 <label for="textarea" class="col-sm-3 col-form-label" style="color: #5F76E8;">Deskripsi</label>
                                                 <div class="form-group">
-                                                    <textarea class="form-control" rows="4" type="text" id="input" placeholder="Deskripsi alat"></textarea>
+                                                    <textarea class="form-control" rows="4" type="text" id="input">Untuk membersihkan ruangan kelas atau ruangan beralas karpet</textarea>
                                                 </div>
                                             </div>
                                             
                                             <div class="mb-3 row">
                                                 <label class="col-sm-2 col-form-label" style="color: #5F76E8;">Total</label>
                                                 <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="input" placeholder="> 0">
+                                                <input type="number" class="form-control" id="input" value="25">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row justify-content-between">
@@ -270,8 +273,8 @@
     
                                             <!-- 2 button in div and that div is on right side -->
                                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                <button type="submit" class="btn btn-primary">Tambahkan</button>
-                                                <button type="submit" class="btn btn-dark">Batalkan</button>
+                                                <a href="inventaris.html" type="submit" style="border-radius: 14px;" class="px-3 btn btn-primary">Simpan</a>
+                                                <a href="inventaris.html" type="submit" style="border-radius: 14px;" class="px-3 btn btn-dark">Batalkan</a>
                                             </div>
                                     </form>
                                 </div>

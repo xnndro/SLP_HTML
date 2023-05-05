@@ -12,7 +12,10 @@
     <!-- <link href="../../assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="../../assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css">
     <link rel="stylesheet" href="../../assets/extra-libs/datatables.net-bs4/css/responsive.dataTables.min.css">
+    
     <!-- Custom CSS -->
+    <!-- <link href="../../dist/css/icons/font-awesome/css/fa-solid.css" rel="stylesheet" >
+    <link href="../../dist/css/icons/font-awesome/css/fontawesome-all.css" rel="stylesheet" > -->
     <link href="../../dist/css/style.min.css" rel="stylesheet">
 </head>
 
@@ -67,7 +70,6 @@
                     <!-- Right side toggle and nav items -->
                     <!-- ============================================================== -->
                     <ul class="navbar-nav float-end">
-                        
                         <!-- ============================================================== -->
                         <!-- User profile -->
                         <!-- ============================================================== -->
@@ -110,8 +112,8 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="index.html"
-                                aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
-                                    class="hide-menu">Dashboard</span></a></li>
+                            aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
+                                class="hide-menu">Dashboard</span></a></li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Pekerja</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
@@ -122,17 +124,21 @@
                                             class="hide-menu"> Jadwal
                                         </span></a>
                                 </li>
+                                <li class="sidebar-item"><a href="workers.html" class="sidebar-link"><span
+                                            class="hide-menu"> Pekerja
+                                        </span></a>
+                                </li>
                                 <li class="sidebar-item"><a href="task-report.html" class="sidebar-link"><span
                                             class="hide-menu"> Laporan Kerja
                                         </span></a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-chat.html"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="workers.html"
                             aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                 class="hide-menu">Data Pekerja</span></a>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="paidleaves-request.html"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="paidleaves-list.html"
                             aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
                                 class="hide-menu">Pengajuan Cuti</span></a>
                         </li>
@@ -147,7 +153,7 @@
                             aria-expanded="false"><i data-feather="grid" class="feather-icon"></i><span
                                 class="hide-menu">Inventaris</span></a>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-calendar.html"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="keluhan.html"
                             aria-expanded="false"><i data-feather="bar-chart" class="feather-icon"></i><span
                                 class="hide-menu">Keluhan</span></a>
                         </li>
@@ -167,94 +173,165 @@
         <div class="page-wrapper">
             <!-- Container fluid  -->
             <div class="container-fluid">
-                <div class="content" style="position: static; opacity: 30%; top: 30%; left: 10%;">
-                    <img src="../../assets/images/inventory-icon.png" class="w-100 ms-5"  alt="">
-                </div>
-                <!-- Start Page Content -->
                 <div class="row">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="align-self-center">
-                                <div class="d-flex justify-content-between mb-3">
-                                    <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Inventaris</h4>
+                    <div class="align-self-center">
+                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Inventaris</h4>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                        <div class="card border-end card-hover overflow-hidden my-3 my-sm-2" style="background-color: rgb(11, 128, 128);">
+                            <div class="card-body">
+                                <div class="d-flex text-white">
+                                    <div>
+                                        <img src="../../assets/images/housekeeping.png" style="opacity: 50%;" class="m-n4" width="90">   
+                                    </div>
+                                    <div class="ms-auto">
+                                        <h6 class="font-weight-normal text-truncate">Housekeeping</h6>
+                                        <div class="d-flex align-items-center">
+                                            <h2 class="text-white font-weight-medium">236</h2>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+        
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                        <div class="card border-end card-hover overflow-hidden my-3 my-sm-2" style="background-color: rgb(14, 157, 157);">
+                            <div class="card-body">
+                                <div class="d-flex text-white">
+                                    <div>
+                                        <img src="../../assets/images/technician.png" style="opacity: 50%;" class="m-n4" width="90">   
+                                    </div>
+                                    <div class="ms-auto">
+                                        <h6 class="font-weight-normal text-truncate">Technician</h6>
+                                        <div class="d-flex align-items-center">
+                                            <h2 class="text-white font-weight-medium">236</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                        <div class="card border-end card-hover overflow-hidden my-3 my-sm-2" style="background-color: rgb(17, 191, 191);">
+                            <div class="card-body">
+                                <div class="d-flex text-white">
+                                    <div>
+                                        <img src="../../assets/images/facadeCleaner.png" style="opacity: 50%;" class="m-n4"width="90">   
+                                    </div>
+                                    <div class="ms-auto">
+                                        <h6 class="font-weight-normal text-truncate">Facade Cleaner</h6>
+                                        <div class="d-flex align-items-center">
+                                            <h2 class="text-white font-weight-medium">236</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                        <div class="card border-end card-hover overflow-hidden my-3 my-sm-2" style="background-color: rgb(20, 216, 216);">
+                            <div class="card-body">
+                                <div class="d-flex text-white">
+                                    <div class="align-items-center">
+                                        <img src="../../assets/images/gardener.png" style="opacity: 50%;" class="m-n4" width="90">   
+                                    </div>
+                                    <div class="ms-auto">
+                                        <h6 class="font-weight-normal text-truncate">Gardener</h6>
+                                        <div class="d-flex align-items-center">
+                                            <h2 class="text-white font-weight-medium">236</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <!-- basic table -->
+                <div class="row">
+                    <div class="col-12">
                         <div class="card">
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table id="zero_config" class="table table-hover">
-                                        <thead class="table-info">
+                                        <thead style="background-color: #5F76E8; border-radius: 25px; color: aliceblue;">
                                             <tr>
-                                                <th>Gambar</th>
+                                                <th style="border-radius: 10px 0px 0px 10px;">Gambar</th>
                                                 <th>Nama</th>
                                                 <th>Deskripsi</th>
-                                                <th>Total</th>
+                                                <th style="border-radius: 0px 10px 10px 0px;">Total</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Tiger Nixon</td>
+                                                <td><img src="../../assets/images/product/p1.jpg" alt="Gambar" width="200" height="200"></td>
                                                 <td>System Architect</td>
                                                 <td>Edinburgh</td>
-                                                <td>33</td>
+                                                <td>61</td>
                                             </tr>
                                             <tr>
-                                                <td>Garrett Winters</td>
+                                                <td><img src="../../assets/images/product/p2.jpg" alt="Gambar" width="200" height="200"></td>
                                                 <td>Accountant</td>
                                                 <td>Tokyo</td>
                                                 <td>63</td>
                                             </tr>
                                             <tr>
-                                                <td>Ashton Cox</td>
+                                                <td><img src="../../assets/images/product/p3.jpg" alt="Gambar" width="200" height="200"></td>
                                                 <td>Junior Technical Author</td>
                                                 <td>San Francisco</td>
                                                 <td>66</td>
                                             </tr>
                                             <tr>
-                                                <td>Cedric Kelly</td>
+                                                <td><img src="../../assets/images/product/p4.jpg" alt="Gambar" width="200" height="200"></td>
                                                 <td>Senior Javascript Developer</td>
                                                 <td>Edinburgh</td>
                                                 <td>22</td>
                                             </tr>
                                             <tr>
-                                                <td>Airi Satou</td>
+                                                <td><img src="../../assets/images/product/p4.jpg" alt="Gambar" width="200" height="200"></td>
                                                 <td>Accountant</td>
                                                 <td>Tokyo</td>
                                                 <td>33</td>
                                             </tr>
                                             <tr>
-                                                <td>Brielle Williamson</td>
+                                                <td><img src="../../assets/images/product/p4.jpg" alt="Gambar" width="200" height="200"></td>
                                                 <td>Integration Specialist</td>
                                                 <td>New York</td>
                                                 <td>61</td>
                                             </tr>
                                             <tr>
-                                                <td>Herrod Chandler</td>
+                                                <td><img src="../../assets/images/product/p4.jpg" alt="Gambar" width="200" height="200"></td>
                                                 <td>Sales Assistant</td>
                                                 <td>San Francisco</td>
                                                 <td>59</td>
                                             </tr>
                                             <tr>
-                                                <td>Rhona Davidson</td>
+                                                <td><img src="../../assets/images/product/p4.jpg" alt="Gambar" width="200" height="200"></td>
                                                 <td>Integration Specialist</td>
                                                 <td>Tokyo</td>
                                                 <td>55</td>
                                             </tr>
                                             <tr>
-                                                <td>Colleen Hurst</td>
+                                                <td><img src="../../assets/images/product/p4.jpg" alt="Gambar" width="200" height="200"></td>
                                                 <td>Javascript Developer</td>
                                                 <td>San Francisco</td>
                                                 <td>39</td>
                                             </tr>
                                             <tr>
-                                                <td>Sonya Frost</td>
+                                                <td><img src="../../assets/images/product/p4.jpg" alt="Gambar" width="200" height="200"></td>
                                                 <td>Software Engineer</td>
                                                 <td>Edinburgh</td>
                                                 <td>23</td>
                                             </tr>
                                             <tr>
-                                                <td>Jena Gaines</td>
+                                                <td><img src="../../assets/images/product/p4.jpg" alt="Gambar" width="200" height="200"></td>
                                                 <td>Office Manager</td>
                                                 <td>London</td>
                                                 <td>30</td>
@@ -264,6 +341,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="content" style="position: static; opacity: 50%; top: 0%; left: 10%;">
+                        <img src="../../assets/images/inventory-icon.png" class="w-100 ms-5"  alt="">
                     </div>
                 </div>
                 <!-- ============================================================== -->
