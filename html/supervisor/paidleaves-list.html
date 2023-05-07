@@ -178,53 +178,76 @@
                 <!--  Start Modal -->
                 <div class="modal fade" id="detail" tabindex="-1" role="dialog"
                 aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg rounded-5">
+                    <div class="modal-dialog modal-md rounded-5">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <div class="row align-items-end" style="width:80vh">
-                                    <div class="col-2 ">
-                                        <h4 class="modal-title text-black" id="myLargeModalLabel">CT001</h4>
-                                    </div>
-                                    <div class="col-auto mt-3 text-start">
-                                        <h6 class="modal-title" id="myLargeModalLabel">Pengajuan : 25-03-2023</h4>
-                                    </div>
+                                    <h4 class="modal-title text-black" id="myLargeModalLabel">Pengajuan Cuti Kerja</h4>
                                 </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <div class="row mb-2">
-                                    <div class="col-5 text-black" style="width:27vh">Nama Lengkap</div>
-                                    <div class="col-auto text-black">:</div>
-                                    <div class="col-5 align-self-start">Xiboba</div>
-                                </div>
-                                <div class="row mb-2">
-                                    <div class="col-5 text-black" style="width:27vh">Posisi</div>
-                                    <div class="col-auto text-black">:</div>
-                                    <div class="col-5 align-self-start">Fasecade Cleaner</div>
-                                </div>
-                                <div class="row mb-2">
-                                    <div class="col-5 text-black" style="width:27vh">Kategori Cuti</div>
-                                    <div class="col-auto text-black">:</div>
-                                    <div class="col-5 align-self-start">Cuti Umum</div>
-                                </div>
-                                <div class="row mb-2">
-                                    <div class="col-5 text-black" style="width:27vh">Tanggal Mulai Cuti</div>
-                                    <div class="col-auto text-black">:</div>
-                                    <div class="col-5 align-self-start">25-03-2023</div>
-                                </div>
-                                <div class="row mb-2">
-                                    <div class="col-5 text-black" style="width:27vh">Tanggal Akhir Cuti</div>
-                                    <div class="col-auto text-black">:</div>
-                                    <div class="col-5 align-self-start">26-03-2023</div>
-                                </div>
-                                <div class="row mb-2">
-                                    <div class="col-5 text-black" style="width:27vh">Pesan</div>
-                                    <div class="col-auto text-black">:</div>
-                                </div>
-                                <textarea class="p-2 rounded-2" name="" id="" cols="50" rows="10">Saya butuh healing pak</textarea>
-                            </div>
-                            <div class="modal-footer">
-                                    <button type="button" class="btn btn-lg rounded-4 btn-primary text-center" style="width:30vh">Setuju</button>
-                                    <button type="button" class="btn btn-lg rounded-4 btn-danger text-center" style="width:30vh">Tolak</button>
+                                <form action="">
+                                    <div class="mb-3 row">
+                                        <label for="idCuti" class="col-sm-4 col-form-label">ID</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control disable" id="idCuti" value="CT001" placeholder="Nama Lengkap" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label for="tanggalPengajuan" class="col-sm-4 col-form-label">Pengajuan</label>
+                                        <div class="col-sm-8">
+                                        <input type="date" class="form-control" id="idCuti" value="2022-10-11" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label for="fullName" class="col-sm-4 col-form-label">Nama Lengkap</label>
+                                        <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="fullName" value="Xiboba Harianto" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label for="jobPosition" class="col-sm-4 col-form-label">Posisi</label>
+                                        <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="jobPosition" value="House Keeping" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label for="kategoriCuti" class="col-sm-4 col-form-label">Kategori Cuti</label>
+                                        <div class="col-sm-8">
+                                            <select name="" class="form-select w-100" id="kategoriCuti" disabled>
+                                                <option selected value="cuti_umum">Cuti Umum</option>
+                                                <option value="cuti_menyusui_melahirkan">Cuti Menyusui & Melahirkan</option>
+                                                <option value="cuti_kesehatan">Cuti Masalah Kesehatan</option>
+                                                <option value="cuti_kedukaan">Cuti Kedukaan</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label for="tanggalMulai" class="col-sm-4 col-form-label">Tanggal Mulai Cuti</label>
+                                        <div class="col-sm-8">
+                                        <input type="date" class="form-control" id="tanggalMulai" value="2023-05-07" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label for="tanggalAkhir" class="col-sm-4 col-form-label">Tanggal Akhir Cuti</label>
+                                        <div class="col-sm-8">
+                                        <input type="date" class="form-control" id="tanggalAkhir" value="2023-06-07" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4 row">
+                                        <label for="pesanCuti" class="col-sm-4 col-form-label">Pesan</label>
+                                        <div class="col-sm-8">
+                                        <textarea class="form-control" rows="7" id="pesanCuti" disabled>Butuh cuti bos, cape</textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- button -->
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                        <button type="submit" class="btn btn-primary" style="width:20vh">Setuju</button>
+                                        <button type="submit" class="btn btn-danger" style="width:20vh">Tolak</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -233,13 +256,22 @@
 
                 <!-- Start Title -->
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="text-black fw-500">Pengajuan Cuti Pekerja</h2>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="text-black fw-500">Pengajuan Cuti Pekerja</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>Karyawan SLP</h4>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4>Karyawan SLP</h4>
+                    <div class="col-6 ">
+                        <div class="text-end text-lg-end mt-3 mt-lg-0">
+                            <a href="kategori-cuti.html" class="btn text-white me-2 bg-primary">Kategori Cuti</a>
+                        </div>
                     </div>
                 </div>
                 <!-- End Title -->
@@ -248,7 +280,7 @@
                   
                 <!-- Start Information Column -->
 
-                <div class="col-md-6 col-lg-3 col-xlg-3">
+                <div class="col-md-12 col-lg-3 col-xlg-3">
                     <div class="card border-end card-hover bg-primary overflow-hidden my-3 my-sm-2">
                         <div class="card-body">
                             <div class="d-flex text-white">
@@ -268,7 +300,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3 col-xlg-3">
+                <div class="col-md-12 col-lg-3 col-xlg-3">
                     <div class="card border-end card-hover bg-success overflow-hidden my-3 my-sm-2">
                         <div class="card-body">
                             <div class="d-flex text-white">
@@ -289,7 +321,7 @@
                 </div>
                
                
-                <div class="col-md-6 col-lg-3 col-xlg-3">
+                <div class="col-md-12 col-lg-3 col-xlg-3">
                     <div class="card border-end card-hover bg-danger overflow-hidden my-3 my-sm-2">
                         <div class="card-body">
                             <div class="d-flex text-white">
@@ -309,9 +341,9 @@
                     </div>
                 </div> 
 
-                <div class="col-md-6 col-lg-3 col-xlg-3">
+                <!-- <div class="col-md-6 col-lg-3 col-xlg-3">
                     <a href="kategori-cuti.html"><button type="button" class="btn btn-lg btn-primary rounded-4 px-3 w-100 my-sm-2">Kategori Cuti</button></a>
-                </div> 
+                </div>  -->
                 <!-- End Information Column -->
             
                
